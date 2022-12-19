@@ -1,4 +1,33 @@
 body {
+    font: Monserrat;
     background-color:#272640;
     color:white;
+}
+
+body {
+    nav {
+        ul {
+            list-style-type: none;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+body {
+    &>header {}
+        &>main {
+            &>thead {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                background: linear-gradient(blue, pink);
+                width:100%;
+        }
+    }
+    &>footer {}
+}
+
+section {
+    height:40vh;
+    width:40vw;
 }
